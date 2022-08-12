@@ -28,7 +28,8 @@
     text-align: right;
     font-weight: bold;
     margin-top: 25px;
-    position: relative;
+    position:relative;
+    
    
     
     
@@ -161,27 +162,66 @@ header {
     padding: 10px 200px ;
 }
 .header2{
-    background-color: #f6ca2dfd;
-    size:100px;
+    background-color: #f3c551;
+    width: 100%;
+    position:fixed;
+   block-size: 100px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 850px ;
+    margin-top: 110px;
+    
+}
+.search-box{
+    position:absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #ffffff;
+    height: 55px;
+    border-radius: 40px;
+    
     
 
 }
-.sectionimage{
-    width: 5%;
+.search-box:hover > .search-txt{
+    width: 740px;
+    padding: 0 6px;
+    top: 50px;
     
-    margin-top: 60px;
+    
 }
-.search-main{
+.search-box:hover > .search-btn{
+   background: rgb(255, 255, 255);
+     }
+.search-btn{
+    color: #e84118;
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #ffffff;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 40px;
-    
+    transition: 0.5s;
+    text-decoration: none;
+    margin-top: 5px;
+}
+.search-txt{
+ border: none;
+ background: none;
+ outline: none;
+ float:none;
+ padding: 0;
+ color: rgb(0, 0, 0);
+ font-size: 16px;
+ transition: 0.4s;   
+ line-height: 50px;
+ width: 0px;
+}
 
-}
-.btn-search{
-    margin-left: 10px;
-}
 
 
 .logo{
@@ -232,10 +272,11 @@ section {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background: url(kalp-hastalıkları-tedavisi\ -\ Copy.jpg) no-repeat;
+    background: url() no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    margin-bottom: 10px;
     
     
 }
