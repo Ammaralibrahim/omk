@@ -1,5 +1,5 @@
 *{
-    font-family: 'Poppins', sans-serif;
+    font-family: 'poppins',sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -20,6 +20,37 @@
     width: 5%;
     
 }
+.container{
+    width:100% ;
+    height: 100vh;
+    padding: 5%;
+    background-image:url()no-repeat ;
+    background-position: center;
+    background-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.search-bar{
+    width: 100%;
+    max-width: 700px;
+    background:rgba(255,255,255,0,2);
+    align-items: center;border-radius: 60px;
+    padding: 10px 20px;
+    border-radius: 60;
+}
+.zıkkım{
+    width: 20px;
+}
+.search-bar{
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    padding: 24px 20px;
+    font-size: ;
+}
+
 
     
     
@@ -171,6 +202,8 @@ header {
     align-items: center;
     padding: 10px 850px ;
     margin-top: 110px;
+    height: 100px;
+    z-index: 999;
     
 }
 .search-box{
@@ -272,14 +305,16 @@ section {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background: url() no-repeat;
+    background: url(kalp-hastalıkları-tedavisi\ -\ Copy.jpg) no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     margin-bottom: 10px;
     
     
+    
 }
+
 .site{
 letter-spacing: 8px;
 margin-bottom: 10px;
@@ -396,6 +431,9 @@ animation: site-anim 3s ease;
     font-size: 1.2em;
     font-weight: 500;
     margin: 10px;
+}
+.services{
+    height: 900px;
 }
 
 .projects {
