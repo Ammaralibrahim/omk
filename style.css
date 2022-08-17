@@ -10,10 +10,12 @@ margin-left: 20px;
 
 }
 .hastane{
-     margin-left: 280px;
+  margin-left: 250px;
+   
 
-   transition: 0.4s ease;
-  
+   transition: 0.5s ease;
+   
+   
   
   
 }
@@ -41,18 +43,23 @@ margin-left: 20px;
 
 
 header {
-    background-color: #ffffff;
+    background-color:#0009;
     background-position:bottom;
     background-size: 100%;
+    height: 150px;
     width: 100%;
     position: fixed;
-    z-index: 999;
+    z-index: 9;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-right: 30px;
+    padding-right: 50px;
     
+       
 }
+
+
+
 
 .header2{
     background-color: #f3c551;
@@ -100,11 +107,11 @@ header {
     text-transform:capitalize;
     font-weight: 400;
     font-size: 1.4em;
-    margin-bottom: 50px;
-    color:#ff0000 ;
+    margin-bottom: 30px;
     
-    text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000, 0 0 40px #00b3ff,
-      0 0 80px #ff0000, 0 0 120px #ff0000;
+    
+    
+   
     
     
     
@@ -117,106 +124,31 @@ header {
  font-size: 0.6em;
  margin-left: 80px;
 }
-.box {
-    position: relative;
-    width: 600px;
-    height: 300px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .box h2 {
-    color: rgb(239, 204, 204);
-    font-size: 4em;
-    font-weight: 600;
-    letter-spacing: 0.1em;
-    text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000, 0 0 40px #00b3ff,
-      0 0 80px #ff0000, 0 0 120px #ff0000;
-  }
-  
-  .lightbar {
+.text {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 10px;
-    height: 100%;
-    border-radius: 10px;
-    background: rgb(239, 204, 204);
-    z-index: 2;
-    box-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000, 0 0 40px #00b3ff,
-    0 0 80px #ff0000, 0 0 120px #ff0000;
-    animation: animateLightbar 5s linear infinite;
-  }
-  
-  @keyframes animateLightbar {
-    0%,
-    5% {
-      transform: scaleY(0) translateX(0);
-    }
-  
-    10% {
-      transform: scaleY(1) translateX(0);
-    }
-  
-    90% {
-      transform: scaleY(0.5) translateX(calc(600px - 10px));
-    }
-  
-    95%,
-    100% {
-      transform: scaleY(0.5) translateX(calc(600px - 10px));
-    }
-  }
-  
-  .topLayer {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgb(255, 255, 255);
-    animation: animateTopLayer 10s linear infinite;
-    opacity: 0;
-  }
-  
-  @keyframes animateTopLayer {
-    0%,
-    2.5% {
-      transform: translateX(0);
-    }
-  
-    5% {
-      transform: translateX(0);
-    }
-  
-    45% {
-      transform: translateX(100%);
-    }
-  
-    47.5%,
-    50% {
-      transform: translateX(100%);
-    }
-  
-    50.0001%,
-    52.5% {
-      transform: translateX(-100%);
-    }
-  
-    55% {
-      transform: translateX(-100%);
-    }
-  
-    95% {
-      transform: translateX(0);
-    }
-  
-    97.5%,
-    100% {
-      transform: translateX(0);
-    }
-  }
+    top: 50%; 
+    right: 79%;
+    transform: translate(50%,-50%);
+    text-transform: uppercase;
+    font-family: verdana;
+    font-size: 5em;
+    font-weight: 700;
+    color: #387be7;
+    text-shadow: 1px 1px 1px #3d98cc,
+        1px 2px 1px #ffffff,
+        1px 3px 1px rgb(255, 255, 255),
+        1px 4px 1px #ffffff,
+        1px 5px 1px #ffffff,
+        1px 6px 1px #ffffff,
+        1px 7px 1px #ffffff,
+        1px 8px 1px #ffffff,
+        1px 9px 1px #ffffff,
+        1px 10px 1px #5aaadc,
+        1px 18px 6px #ffffff,
+        1px 22px 10px #ffffff,
+        1px 25px 35px #ffffff,
+        1px 30px 60px rgba(16,16,16,0.4);
+}
 
 
 
@@ -226,17 +158,24 @@ header {
 
 
 .navigation a{
-    color: #c71d15;
+    color: #ede3e2;
     text-decoration: none;
-    font-size: 1.2em;
+    font-size: 1.1em;
     font-weight:500;
-    
+    padding: 20px;
     font-family:sans-serif;
-    margin-right: 19px;
+    border-radius: 10px;
+    
+    
+    
+    
+    
 }
 
 .navigation a:hover{
-    color: #ff3636;
+    
+    background-color: rgb(48, 46, 46);
+    background-size: 20px;
 }
 
 section {
@@ -248,11 +187,12 @@ section {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background: url(kalp-hastalıkları-tedavisi\ -\ Copy.jpg) no-repeat;
+    background: url(custom_resized_8b5a4beb-acae-4320-8764-1d77bb694583.jpg) no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     margin-bottom: 10px;
+    background-position: bottom;
     
     
     
