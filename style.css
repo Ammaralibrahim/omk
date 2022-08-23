@@ -12,7 +12,7 @@
     transition: 0.5s ease;
     margin-bottom: 10px;
     display: flex;
-    bottom: 76%;
+    bottom: 79%;
     
      
     
@@ -23,21 +23,6 @@
     transform: scale(1.1);
 
 }
-
-  
-
-  
-
-
-
-
-
-
-
-    
-    
-
-
 
 
 header {
@@ -56,10 +41,79 @@ header {
     background-size: cover;
        
 }
-.header:hover{
-    background: rgb(0, 0, 0); 
-    box-shadow:inset 300px 0 0 0 #000000; 
+
+
+
+nav{
+	position: fixed;
+    left: 60%;
+    bottom:  85%;
+	margin: 270px auto 0;
+	width: 590px;
+	height: 50px;
+	background: rgb(255, 204, 102);
+	border-radius: 8px;
+	font-size: 0;
+	box-shadow: 0 2px 3px 0 rgba(0,0,0,.1);
 }
+nav a{
+	font-size: 15px;
+	text-transform: uppercase;
+	color: rgb(255, 255, 255);
+	text-decoration: none;
+	line-height: 50px;
+	position: relative;
+	z-index: 1;
+	display: inline-block;
+	text-align: center;
+}
+nav .animation{
+	position: absolute;
+	height: 100%;
+	/* height: 5px; */
+	top: 0;
+	/* bottom: 0; */
+	z-index: 0;
+	background: #b5b7b6;
+	border-radius: 8px;
+	transition: all .5s ease 0s;
+}
+nav a:nth-child(1){
+	width: 100px;
+}
+nav .start-home, a:nth-child(1):hover~.animation{
+	width: 100px;
+	left: 0;
+}
+nav a:nth-child(2){
+	width: 110px;
+}
+nav a:nth-child(2):hover~.animation{
+	width: 110px;
+	left: 100px;
+}
+nav a:nth-child(3){
+	width: 100px;
+}
+nav a:nth-child(3):hover~.animation{
+	width: 100px;
+	left: 210px;
+}
+nav a:nth-child(4){
+	width: 160px;
+}
+nav a:nth-child(4):hover~.animation{
+	width: 160px;
+	left: 310px;
+}
+nav a:nth-child(5){
+	width: 120px;
+}
+nav a:nth-child(5):hover~.animation{
+	width: 120px;
+	left: 470px;
+}
+
 .header2{
     background-color:rgb(255, 204, 102);
     z-index: 99;
@@ -131,44 +185,23 @@ header {
 
 
 }
-
-
-
-
-
-
-
-
-
-
-
-    
-
-  
-  
-
-
-.main {
-    width: 1920px;
-    height: 1080px;
-    background-image: url();
-    opacity: 0.8;
-  
-    
+.main{
+    width: 100%;
+    height: 100vh;
 }
 
- 
 
 
 .beyin{
-    font-size: x-small;
-    font-weight: 50px;
+    font-size: small;
+    font-weight: 60px;
+    color:rgb(116, 116, 116);
 }
 
 .title {
     display: flex;
     justify-content: center;
-    color: #3a6cf4;
+    color: rgb(255, 204, 102);
     font-size: 2.2em;
     font-weight:1.2em;
     margin-bottom: 30px;
@@ -181,7 +214,7 @@ header {
     flex-wrap: wrap;
 }
 .renk{
-    color: rgb(74, 74, 217);
+    color: rgb(1, 1, 15);
 }
 
 .card {
@@ -201,7 +234,7 @@ header {
 }
 
 .card .icon {
-    color: #3a6cf4;
+    color: rgb(255, 204, 102);
     font-size: 8em;
     text-align: center;
 }
@@ -212,11 +245,12 @@ header {
 }
 .astım{
     font-size: small;
+    color:rgb(116, 116, 116) ;
 }
 
 
 .info h3{
-    color: #3a6cf4;
+    color: rgb(255, 204, 102);
     font-size: 1.2em;
     font-weight: 500;
     margin: 10px;
@@ -240,8 +274,8 @@ header {
 
 .btn {
     background: none;
-    border: 2px solid #2c3e50;
-    font-size: 14px;
+    border: 1px solid #2c3e50;
+    font-size: 18px;
     font-family: "Tahoma", sans-serif;
     text-transform: uppercase;
     padding: 12px 40px;
@@ -254,7 +288,7 @@ header {
 }
 
 .btn:hover {
-    color: rgb(255, 255, 255);
+    color: rgb(95, 95, 95);
 }
 
 .btn::before {
@@ -264,7 +298,7 @@ header {
     top: 0;
     width: 100%;
     height: 100%;
-    background: #2c3e50;
+    background: rgb(255, 204, 102);
     z-index: -1;
     transition: transform 0.5s;
     transform-origin:  0;
@@ -344,18 +378,19 @@ header {
 
 .more-details {
     text-decoration: none;
-    color: #3a6cf4;
+    color: rgb(255, 204, 102);
     font-size: small;
     box-shadow: inset 0 0 0 0 rgba(51, 51, 51, 0.489);
     transition: ease-in 0.4s;
 }
 
 .more-details:hover {
-    color: #601cfc;
-    background: rgb(255, 255, 255); 
-    box-shadow:inset 300px 0 0 0 #bfcdd7; 
+    
+    color: #646464;
+    background: rgb(255, 204, 102); 
+    box-shadow:inset 300px 0 0 0 rgb(255, 204, 102); 
     cursor: pointer;
-    color:#601cfc;
+    
     border-radius: 6px;
 }
 
@@ -372,7 +407,7 @@ header {
 }
 
 .footer {
-    background-color: #000016;
+    background-color: #b5b7b6;
     color: #fff;
     padding: 4em;
     display: flex;
@@ -385,12 +420,14 @@ header {
 }
 
 .footer-title span {
-    color: #295eee;
+    color: rgb(255, 204, 102);
 }
 
 .footer .social-icons a{
     font-size: 1.3em;
     padding: 0 12px 0 0;
+    color: rgb(255, 204, 102);
+    
 }
 
 @media (max-width:400px){
