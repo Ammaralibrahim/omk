@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+*{
+    padding: 0;
+    margin:0;
+    text-decoration: none;
+
+}
+
+
+
+
+.header2{
+    background-color:rgb(255, 204, 102);
+    position: fixed;
+    z-index: 999;
+    
+   
+    height: 100px;
+    width: 100%;
+}
+.search-i{
+  position: fixed;
+  z-index: 999;
+  height:25px;
+  left: 64.3%;
+  top: 4.5%;
+}
+.container {
+
+}
+.select-menu{
+  border: 2px solid rgb(255, 204, 102) ;
+  border-radius: 4%;
+  width: 160px;
+  position: fixed;
+  margin: 140px auto;
+  left: 21%;
+  bottom: 77% ;
+  z-index: 999;
+}
+.select-menu .select-btn{
+  display: flex;
+  height: 0px;
+  background: #fff;
+  padding: 20px;
+  font-size: 18px;
+  font-weight: 400;
+  border-radius: 8px;
+  align-items: center;
+  cursor: pointer;
+  justify-content: space-between;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+.select-btn i{
+  font-size: 25px;
+  transition: 0.3s;
+}
+.select-menu.active .select-btn i{
+  transform: rotate(-180deg);
+}
+.select-menu .options{
+  position: fixed;
+  padding: 20px;
+  margin-top: 10px;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 0 8px rgb(0, 0, 0);
+  display: none;
+}
+.select-menu.active .options{
+  display: block;
+}
+.options .option{
+  display: flex;
+  height: 55px;
+  cursor: pointer;
+  padding: 0 16px;
+  border-radius: 8px;
+  align-items: center;
+  background: #fff;
+}
+.options .option:hover{
+  background: #F2F2F2;
+}
+.option i{
+  font-size: 25px;
+  margin-right: 12px;
+}
+.option .option-text{
+  font-size: 18px;
+  color: #333;
+}
+
+
+
+
+
+
+#myInput {
+  background-image: url('/css/searchicon.png'); /* Add a search icon to input */
+  background-position: 10px 12px; /* Position the search icon */
+  background-repeat: no-repeat; /* Do not repeat the icon image */
+  border-radius: 305px;
+  width: 35%; /* Full-width */
+  height:4% ;
+  position: fixed;
+  z-index: 999;
+  margin-left: 30%;
+  margin-top: 0.5%;
+  top:2%;
+  font-size: 16px; /* Increase font-size */
+  padding: 12px 20px 12px 40px; /* Add some padding */
+  border:none; /* Add a grey border */
+  margin-bottom: 12px; /* Add some space below the input */
+}
+
+
+
+
+
+#myUL {
+  
+  /* Remove default list styling */
+  list-style-type: none;
+  
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  margin-top: 3%;
+ 
+  
+}
+
+#myUL li a {
+  border: 3px solid #b5b7b6; /* Add a border to all links */
+  width: 30%;
+  margin-left: 33.2%;
+  position: sticky;
+  border-radius: 30px;
+  margin-top: 10px; /* Prevent double borders */
+  background-color:rgb(255, 255, 255); /* Grey background color */
+  padding: 12px; /* Add some padding */
+  text-decoration: none; /* Remove default text underline */
+  font-size: 18px; /* Increase the font-size */
+  color: rgb(87, 87, 87); /* Add a black text color */
+  display: block; /* Make it into a block element to fill the whole list */
+}
+
+
+#myUL li a:hover:not(.header) {
+  
+border: 3px solid rgb(255, 204, 102) ;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
