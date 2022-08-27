@@ -1,204 +1,100 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
-
 *{
-    padding: 0;
-    margin:0;
-    text-decoration: none;
-
-}
-
-
-
-
-.header2{
-    background-color:rgb(255, 204, 102);
-    position: fixed;
-    z-index: 999;
-    
-   
-    height: 100px;
-    width: 100%;
-}
-.search-i{
-  position: fixed;
-  z-index: 999;
-  height:35px;
-  left: 32%;
-  top: 4.5%;
-}
-.container {
-
-}
-
-.filter-icon{
-  position: fixed;
-  display: flex;
-  height: 4%;
-  left: 65.3%;
-  z-index: 999;
-  top: 4%;
-}
-
-
-
-
-#myInput {
-  /* Add a search icon to input */
-  background-color: rgb(255, 255, 255);
-  background-position: 10px 12px; /* Position the search icon */
-  background-repeat: no-repeat; /* Do not repeat the icon image */
-  border-radius: 30px;
-  width: 35%; /* Full-width */
-  height:4% ;
-  position: fixed;
-  z-index: 999;
-  margin-left: 30%;
-  margin-top: 0.5%;
-  top:2%;
-  font-size: 16px; /* Increase font-size */
-  padding: 12px 20px 12px 40px; /* Add some padding */
-  border:none; /* Add a grey border */
-  margin-bottom: 12px; /* Add some space below the input */
-}
-input::placeholder{
-  position: fixed;
-  z-index: 999;
-  top: 23.3px;
-  left: 14%;
-  color:#b5b7b6 ;
-}
-.user-box {
-  position: fixed;
-  
-  z-index: 999;
-  top: 3.5%;
-  width: 50px;
-  left: 64%;
-  
-}
-
-
-
-
-.user-picture {
-  width: 35px;
-  height: 35px;
-  margin-top: 23%;
- opacity: 0.5;
-  
-  
-}
-
-.user-name {
-  height: 100%;
-  width: 300px;
-  font-size: 1.5em;
-  line-height: 2.5em;
-  padding: 20px;
-  float: left;
-}
-
-.dropdown-arrow {
-  height: 0;
-  width: 0;
-	border-left: 10px solid transparent;
-	border-right: 10px solid transparent;
-	border-top: 10px solid #333;
-  position: relative;
-  top: 45px;
-  left: 350px;
-}
-
-.user-id:hover .dropdown-arrow {
-  top: 35px;
-	border-left: 10px solid transparent;
-	border-right: 10px solid transparent;
-	border-bottom: 10px solid #333;
-  border-top: 10px solid transparent;
-}
-
-.dropdown-menu {
-  list-style-type: none;
-  border-radius: 30px;
-  display: none;
-  background: #555; /* Non-rgba compatable browsers */
-  background: rgba(33, 33, 33, 0.9);
-}
-
-.user-id:hover .dropdown-menu {
-  display: block;
-  position: absolute;
-  top: 100%;
-}
-
-.dropdown-menu ul li {
-  list-style-type: none;
-  display: block;
-  height: 50px;
-  width: 200px;
-  font-size: 1.5em;
-  line-height: 2.5em;
-  padding: 20px;
-  color: #fff;
-  border-bottom: 2px solid #333;
-}
-
-.dropdown-menu ul li:last-child {
-  border-bottom: none;
-}
-
-.dropdown-menu ul li:hover {
-  background: #333;
-  color: #fff;
-}
-
-
-
-
-#myUL {
-  
-  /* Remove default list styling */
-  list-style-type: none;
-  
-  padding: 0;
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+body {
+  
+  
+}
+header{
+  background-color: rgb(255, 204, 102);
+    
+    
+    
+    
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 50px;
+    width: 100%;
+    height: 120px;
+    background-position: center;
+    background-size: cover;
+}
+.logo-png{
+  height: 150px;
+  margin-left: 60px;
+}
+
+::selection{
+  color: #fff;
+  background: #664AFF;
+}
+.wrapper{
+  width: 500px;
+  position: fixed;
+  left: 35%;
+  top: 3.5%;
+}
+.wrapper .search-input{
+  background: #fff;
   width: 100%;
-  margin-top: 3%;
- 
-  
+  border-radius: 5px;
+  position: relative;
+  box-shadow: 0px 1px 5px 3px rgba(0,0,0,0.12);
 }
-
-#myUL li a {
-  border: 3px solid #b5b7b6; /* Add a border to all links */
-  width: 30%;
-  margin-left: 33.2%;
-  position: sticky;
-  border-radius: 30px;
-  margin-top: 10px; /* Prevent double borders */
-  background-color:rgb(255, 255, 255); /* Grey background color */
-  padding: 12px; /* Add some padding */
-  text-decoration: none; /* Remove default text underline */
-  font-size: 18px; /* Increase the font-size */
-  color: rgb(87, 87, 87); /* Add a black text color */
-  display: block; /* Make it into a block element to fill the whole list */
+.search-input input{
+  height: 55px;
+  width: 100%;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  padding: 0 60px 0 20px;
+  font-size: 18px;
+  box-shadow: 0px 1px 5px rgba(0,0,0,0.1);
 }
-
-
-#myUL li a:hover:not(.header) {
-  
-border: 3px solid rgb(255, 204, 102) ;
-
+.search-input.active input{
+  border-radius: 5px 5px 0 0;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
+.search-input .autocom-box{
+  padding: 0;
+  opacity: 0;
+  pointer-events: none;
+  max-height: 280px;
+  overflow-y: auto;
+}
+.search-input.active .autocom-box{
+  padding: 10px 8px;
+  opacity: 1;
+  pointer-events: auto;
+}
+.autocom-box li{
+  list-style: none;
+  padding: 8px 12px;
+  display: none;
+  width: 100%;
+  cursor: default;
+  border-radius: 3px;
+}
+.search-input.active .autocom-box li{
+  display: block;
+}
+.autocom-box li:hover{
+  background: #efefef;
+}
+.search-input .icon{
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  height: 55px;
+  width: 55px;
+  text-align: center;
+  line-height: 55px;
+  font-size: 20px;
+  color: #b5b7b6;
+  cursor: pointer;
+}
